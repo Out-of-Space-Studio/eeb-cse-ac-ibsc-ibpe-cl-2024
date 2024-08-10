@@ -206,21 +206,21 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCPh9Hg4qFMyrP_7nchVGTvM-qQKSUa6JE",
-    authDomain: "ic-im-in-cse-2024-48f2b.firebaseapp.com",
     databaseURL:
-        "https://ic-im-in-cse-2024-48f2b-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "ic-im-in-cse-2024-48f2b",
-    storageBucket: "ic-im-in-cse-2024-48f2b.appspot.com",
-    messagingSenderId: "259899984268",
-    appId: "1:259899984268:web:888b208395c19ffdd3aea9",
+        "https://eeb-cse-ac-ibsc-ibpe-cl-2024-default-rtdb.asia-southeast1.firebasedatabase.app",
+    apiKey: "AIzaSyAho2qbefnrfBXQSMQ_9ZSkwNyPEn5hCD0",
+    authDomain: "eeb-cse-ac-ibsc-ibpe-cl-2024.firebaseapp.com",
+    projectId: "eeb-cse-ac-ibsc-ibpe-cl-2024",
+    storageBucket: "eeb-cse-ac-ibsc-ibpe-cl-2024.appspot.com",
+    messagingSenderId: "1057453094775",
+    appId: "1:1057453094775:web:a02180b14b7d69e1385372",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const appCheck = initializeAppCheck(app, {
     provider: new ReCaptchaV3Provider(
-        "6LcUXgcqAAAAANUEME6erIMev4sWICtHskv78kWA"
+        "6Lfa4SMqAAAAALDhErdz0ZuH3WRyFtk9TwWibjO6"
     ),
 
     // Optional argument. If true, the SDK automatically refreshes App Check
