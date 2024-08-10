@@ -284,6 +284,8 @@ function verifyId(id) {
 // close iframe
 function closeIframe() {
     const tag = top.document.getElementById("sign-up");
-    tag.style.display = "none";
-    console.log("iframe closed");
+    if (tag) {
+        tag.style.display = "none";
+        console.log("iframe closed");
+    }
 }
