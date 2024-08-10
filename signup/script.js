@@ -138,7 +138,7 @@ window.check_form = async function () {
         emgRelation: form.ICERelationship.value,
         emgPhoneNumber: form.ICEPhoneNumber.value,
     });
-    closeIframe();
+    console.log("obj created");
     await student.confirmInfo();
 };
 
@@ -249,6 +249,7 @@ async function writeUserData(stu) {
         .then(function () {
             console.log("Data written successfully");
             alert("報名成功");
+            closeIframe();
             window.location.href = "../index.html";
         })
         .catch(function (error) {
