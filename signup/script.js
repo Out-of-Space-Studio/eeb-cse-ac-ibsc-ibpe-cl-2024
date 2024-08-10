@@ -133,7 +133,7 @@ window.check_form = async function () {
         idnumber: form.IDNumber.value,
         birth: form.BIRTH.value,
         phoneNumber: form.phoneNumber.value,
-        // clothingSize: form.CLOTHINGSIZE.value,
+        clothingSize: form.CLOTHINGSIZE.value,
         emgName: form.ICEName.value,
         emgRelation: form.ICERelationship.value,
         emgPhoneNumber: form.ICEPhoneNumber.value,
