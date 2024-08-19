@@ -8,9 +8,11 @@ section {
 }
 
 .s-title {
+    color: #f2f4f3;
     font-size: 25px;
 }
 .title {
+    margin-top: 35px;
     font-size: 35px;
 }
 
@@ -91,7 +93,7 @@ section {
 
 .inp:focus,
 select:focus {
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    box-shadow: 0 0 5px #49111c;
 }
 
 .body .inp::placeholder {
@@ -114,9 +116,9 @@ select:focus {
 }
 
 .submit {
-    background-color: #2c3e50;
+    background-color: #49111c;
     padding: 12px 20px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #f2f4f3;
     text-align: center;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     display: block;
@@ -133,7 +135,7 @@ select:focus {
 .submit:hover {
     color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.3);
-    background-color: #2980b9;
+    background-color: #49111c;
 }
 
 .submit:active {
@@ -152,7 +154,7 @@ select:focus {
 }
 
 .comment {
-    color: #3498db;
+    color: #49111c;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
