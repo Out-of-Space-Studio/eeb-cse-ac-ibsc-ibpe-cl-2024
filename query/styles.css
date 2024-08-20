@@ -97,16 +97,16 @@ select:focus {
 }
 
 .body .inp::placeholder {
-    color: #7f8c8d;
+    color: #f2f4f3;
     opacity: 1; /* Firefox */
 }
 .body select option {
-    color: #7f8c8d;
+    color: #f2f4f3;
 }
 
 /* For IE and Edge */
 .body select::-ms-value {
-    color: #7f8c8d;
+    color: #f2f4f3;
 }
 
 /* For Firefox */
@@ -191,7 +191,7 @@ select:focus {
 }
 
 .close {
-    color: #f1f1f1;
+    color: #f2f4f3;
     font-size: 40px;
     font-weight: bold;
     position: absolute;

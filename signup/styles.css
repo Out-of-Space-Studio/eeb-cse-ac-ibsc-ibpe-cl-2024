@@ -1,6 +1,11 @@
 /*
 	section start
 */
+
+body {
+    background-color: #13100e;
+}
+
 section {
     padding: 5rem 1rem;
     max-width: 1200px;
