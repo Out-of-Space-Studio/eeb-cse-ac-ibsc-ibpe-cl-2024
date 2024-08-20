@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (header) header.style.display = "none";
         if (footer) footer.style.display = "none";
-        body.style.backgroundColor = "#13100E";
+        body.style.backgroundColor = "#212121";
     }
 });
 window.showImage = function (src) {
