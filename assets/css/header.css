@@ -73,7 +73,7 @@
     padding: 20px;
     text-decoration: none;
     color: #49111c;
-    text-shadow: 1px 1px 2em #efab84, 2px 2px 1em #e9e3a5, 0 0 0.2em #c9dda2;
+    text-shadow: 2px 2px 1em #efab84, 0 0 0.2em #c9dda2;
     font-weight: 600;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
