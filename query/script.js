@@ -147,10 +147,13 @@ class Stu {
         this.idnumber = studentData.idnumber;
         this.birth = studentData.birth;
         this.phoneNumber = studentData.phoneNumber;
-        // this.clothingSize = studentData.clothingSize;
+        this.clothingSize = studentData.clothingSize;
         this.emgName = studentData.emgName;
         this.emgRelation = studentData.emgRelation;
         this.emgPhoneNumber = studentData.emgPhoneNumber;
+        if (this.sid[0].toLowerCase() === "s") {
+            this.sid = this.sid.slice(1);
+        }
     }
 
     async confirmInfo() {
@@ -183,21 +186,21 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCPh9Hg4qFMyrP_7nchVGTvM-qQKSUa6JE",
-    authDomain: "ic-im-in-cse-2024-48f2b.firebaseapp.com",
     databaseURL:
-        "https://ic-im-in-cse-2024-48f2b-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "ic-im-in-cse-2024-48f2b",
-    storageBucket: "ic-im-in-cse-2024-48f2b.appspot.com",
-    messagingSenderId: "259899984268",
-    appId: "1:259899984268:web:888b208395c19ffdd3aea9",
+        "https://eeb-cse-ac-ibsc-ibpe-cl-2024-default-rtdb.asia-southeast1.firebasedatabase.app",
+    apiKey: "AIzaSyAho2qbefnrfBXQSMQ_9ZSkwNyPEn5hCD0",
+    authDomain: "eeb-cse-ac-ibsc-ibpe-cl-2024.firebaseapp.com",
+    projectId: "eeb-cse-ac-ibsc-ibpe-cl-2024",
+    storageBucket: "eeb-cse-ac-ibsc-ibpe-cl-2024.appspot.com",
+    messagingSenderId: "1057453094775",
+    appId: "1:1057453094775:web:a02180b14b7d69e1385372",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const appCheck = initializeAppCheck(app, {
     provider: new ReCaptchaV3Provider(
-        "6LcUXgcqAAAAANUEME6erIMev4sWICtHskv78kWA"
+        "6Ldo4iMqAAAAAKHWjUNPBzHVqfHPvR5pgssZNO_1"
     ),
 
     // Optional argument. If true, the SDK automatically refreshes App Check
@@ -231,8 +234,8 @@ async function readUserData(stu) {
                             correctData.BIRTH +
                             "\n 聯絡電話：" +
                             correctData.PHONE +
-                            // "\n 衣服尺寸：" +
-                            // correctData.SIZE +
+                            "\n 衣服尺寸：" +
+                            correctData.SIZE +
                             "\n 緊急聯絡人姓名：" +
                             correctData.EMGNAME +
                             "\n 與學員之關係：" +
@@ -278,4 +281,3 @@ function verifyId(id) {
 
     return checkSum % 10 == 0;
 }
-
