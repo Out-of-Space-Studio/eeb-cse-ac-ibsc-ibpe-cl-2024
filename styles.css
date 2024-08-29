@@ -434,7 +434,7 @@ p.cursor::after {
 }
 
 .timetable-container {
-    height: 250px;
+    height: 190px;
     width: 100%;
     overflow: hidden;
     margin-bottom: 35px;
