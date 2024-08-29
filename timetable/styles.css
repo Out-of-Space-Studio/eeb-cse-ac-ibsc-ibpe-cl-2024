@@ -18,12 +18,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 table {
     border-collapse: collapse;
     font-family: "IANSUI";
-    width: 100%;
+    table-layout: fixed;
+    width: max-content;
     height: 100%;
 }
 
@@ -74,20 +76,4 @@ td:hover {
     background-color: #212121;
     color: #cfcfcf;
     text-shadow: 2px 2px 1em #49111c, 0 0 0.2em #49111c;
-}
-
-@media screen and (max-width: 768px) {
-    th,
-    td {
-        padding: 8px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    th,
-    td {
-        padding: 6px;
-        font-size: 10px;
-    }
 }
