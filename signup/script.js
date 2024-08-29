@@ -54,6 +54,8 @@ const RELATION2TXT = {
     OTHERS: "其他",
 };
 
+const DEPART2ID = ["03", "04", "14", "15", "28", "30", "33", "36", "38"];
+
 window.todo = async function () {
     console.log("SUBMITED");
     check_form();
@@ -122,6 +124,18 @@ window.check_form = async function () {
         return;
     } else {
         IDNumber.style.borderColor = "";
+    }
+
+    const department = form.SID.value.slice(3, 5);
+    if (!DEPART2ID.includes(department)) {
+        alert("僅開放\n電乙、資工、人英、工英、會計、中語系\n以上六系報名喔！");
+        window.location.href("./index.html");
+    }
+
+    const year = form.SID.value.slice(0, 3);
+    if (year != "113") {
+        alert("僅開放新生報名喔！");
+        window.location.href("./index.html");
     }
 
     const student = new Stu({

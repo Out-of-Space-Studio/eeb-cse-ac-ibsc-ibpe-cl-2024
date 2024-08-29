@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "IANSUI";
+    src: URL("../Iansui-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.calendar-container {
+    overflow: hidden;
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: #4d4d4d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+    transform-origin: top left;
+    table-layout: fixed;
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+    font-family: "IANSUI";
+    height: 170px;
+}
+
+th,
+td {
+    font-size: 15px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #0a0908;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #0a0908;
+    color: #49111c;
+    text-shadow: 2px 2px 1em #efab84, 0 0 0.2em #c9dda2;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.date {
+    background-color: #0a0908;
+    color: #49111c;
+    text-shadow: 2px 2px 1em #efab84, 0 0 0.2em #c9dda2;
+    font-weight: 600;
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    width: 100px;
+}
+
+.date:hover {
+    background-color: #0a0908;
+}
+
+.null {
+    background-color: #39393a;
+}
+
+.null:hover {
+    background-color: #39393a;
+}
+
+td:hover {
+    background-color: #212121;
+    color: #cfcfcf;
+    text-shadow: 2px 2px 1em #49111c, 0 0 0.2em #49111c;
+}
+
+@media screen and (max-width: 768px) {
+    .calendar-container {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .calendar-container {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 10px;
+    }
+}
