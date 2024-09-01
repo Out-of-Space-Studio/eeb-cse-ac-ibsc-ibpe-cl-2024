@@ -265,7 +265,9 @@ async function writeUserData(stu) {
     })
         .then(function () {
             console.log("Data written successfully");
-            alert("報名成功");
+            alert(
+                "報名成功！\n請於繳費時間內繳納完畢，感謝您的配合！\n\n報名費用： NT＄3,800\n繳費時間： 9/9(一)～9/27(五) 12:00～13:00\n繳費地點： 各系系辦"
+            );
             closeIframe();
             window.location.href = "../index.html";
         })
