@@ -16,6 +16,7 @@ body {
     background-color: #171210;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
 }
 table {
     transform-origin: top left;
