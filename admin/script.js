@@ -155,6 +155,7 @@ async function getUserData() {
                 students.push(childSnapshot.val());
                 console.log(childSnapshot);
                 add2Table(
+                    count + 1,
                     Object.keys(snapshot.val())[count],
                     childSnapshot.val()
                 );
@@ -247,11 +248,12 @@ async function readUserData(stu) {
         });
 }
 
-function add2Table(sid, studentData) {
+function add2Table(index, sid, studentData) {
     const tableBody = document.getElementById("studentTableBody");
     const row = tableBody.insertRow();
 
     const cellData = [
+        index,
         sid,
         studentData.NAME,
         GENDER2TXT[studentData.GENDER],
