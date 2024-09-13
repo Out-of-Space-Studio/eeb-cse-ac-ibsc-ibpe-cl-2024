@@ -133,7 +133,7 @@ window.check_form = async function () {
     }
 
     const year = form.SID.value.slice(0, 3);
-    if (year != "113") {
+    if (year != "113" || year != "112") {
         alert("僅開放新生報名喔！");
         window.location.href("./index.html");
     }
